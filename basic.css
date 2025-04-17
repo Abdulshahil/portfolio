@@ -1,0 +1,163 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #ffffff;
+    color: rgba(0, 0, 0, 0.795);
+  }
+  
+  header {
+    background: #000000;
+    color: rgb(255, 255, 255);
+    padding: 2rem;
+    text-align: center;
+  }
+  #content{
+    height: 60vh;
+    width: 100%;
+    display: none;
+    text-align: center;
+    
+  }
+
+  button {
+    background: linear-gradient(to bottom, #535353, #6c6e6c);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    cursor: pointer;
+    box-shadow: 0 5px #0d0e0d;
+    transition: all 0.2s ease;
+  }
+  
+  button:active {
+    box-shadow: 0 2px #141414;
+    transform: translateY(3px);
+  }
+  
+  nav a {
+    margin: 0 10px;
+    color: #fcfcfc;
+    text-decoration: none;
+  }
+  
+  section {
+      margin: 0;
+      padding:0;
+      background: #262626;
+      display: flex;
+      justify-content: center;
+    }
+    #about{
+      background-color: #fcfcfc;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    ul {
+      display: flex;
+      /* margin-top: 100px; */
+    }
+      
+      ul li {
+        list-style: none;
+      }
+      
+      ul li a {
+        width: 80px;
+        height: 80px;
+        background-color: #ffffff;
+        text-align: center;
+        line-height: 80px;
+        font-size: 35px;
+        margin: 0 10px;
+        display: block;
+        border-radius: 50%;
+        position: relative;
+        overflow: hidden;
+        border: 3px solid #fff;
+        z-index: 1;
+      }
+      
+      ul li a .icon {
+        position: relative;
+        color: #262626;
+        transition: .5s;
+        z-index: 3;
+      }
+      
+      ul li a:hover .icon {
+        color: #fff;
+        transform: rotateY(360deg);
+      }
+      
+      ul li a:before {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #f00;
+        transition: .5s;
+        z-index: -5;
+      }
+      
+      ul li a:hover:before {
+        top: 0;
+      }
+      
+      ul li:nth-child(1) a:before{
+        background: #3b5999; background-image: url(fb.png);
+        background-size: contain;
+        
+      }
+      
+      ul li:nth-child(2) a:before{
+        background: #55acee; background-image: url(in.png);
+        background-size: contain;
+      }
+      
+      ul li:nth-child(3) a:before {
+        background: #bd72c4;background-image: url(ig.png);
+        background-size: contain;
+      }
+      
+      ul li:nth-child(4) a:before {
+        background: #dd4b39;background-image: url(github.png);
+        background-size: contain;
+      }
+      ul li:nth-child(5) a:before{
+        background: #3b5999; background-image: url(go.png);
+        background-size: contain;
+      }
+  
+  .project {
+    background: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+   
+  }
+  
+  footer {
+    height: 200px;
+    text-align: center;
+  
+    background: #000000;
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+   
+  }
+  #contact{
+    
+    background: transparent;
+    
+  }
+  
